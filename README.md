@@ -1,7 +1,9 @@
-# MyProgress
-Progress Bar in android programatically
+Progress Dialog is used to display loading / progress in android, by API level 26 the progress dialog was depricated and we need to use 
+ProgressBar instead. 
+
 
 1. Add this in root level gradle.gradle file
+
     allprojects {
 		repositories {
 			...
@@ -10,6 +12,16 @@ Progress Bar in android programatically
 	  }
     
  2. Add this dependency to build.gradle file
+ 
      dependencies {
 	        implementation 'com.github.AravindRamineni:MyProgress:0.1.0'
+	   }
+
+To import this a module 
+1. Open Android Studio --> File --> New --> Import Module.
+2. Choose the module from the system.
+3. In the build.gradle file add 
+      
+	  dependencies {
+	        implementation project(':myprogress')
 	   }
